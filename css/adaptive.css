@@ -1,0 +1,23 @@
+@media screen and (max-width: 1024px) {
+	header .header > *:not(.left) {
+		visibility: hidden;
+	}
+	.container {
+		margin: 0 calc(var(--index) * 2 );
+	}
+	.container-2 {
+		margin: 0 calc(var(--index) * 1.5 );
+	}
+	.sell__conteiner .lightText {
+		position: absolute;
+		margin-left: calc(var(--index) * 1.5 );
+	}
+	.sell__conteiner .left {
+		margin-left: calc(var(--index) * 2 );
+	}
+}
+@media screen and (min-width: 1025px) {
+	.burger-butt {
+		visibility: hidden;
+	}
+}

@@ -14,3 +14,18 @@ gsap.fromTo('.rotateImage', { rotation: 0 }, {
 	}
 })
 
+let burgerMenu = document.getElementById('bm'),
+		bg         = document.getElementById('bgmb'),
+    ifBurger   = false
+
+function burgerOpen() {
+	if (ifBurger == false) {
+		burgerMenu.style = 'left: 0px;'
+		bg.style         = 'visibility: visible; opacity:1;'
+		ifBurger = true
+	} else {
+		burgerMenu.style = 'left: -100%;'
+		bg.style         = 'visibility: hidden; opacity:0;'
+		ifBurger = false
+	}
+}

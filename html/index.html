@@ -12,6 +12,7 @@
 	<script src='../js/app.js' defer></script>
 
 	<link rel='stylesheet' href='../css/style.css'>
+	<link rel='stylesheet' href='../css/adaptive.css'>
 
 	<title>Пиццаландия</title>
 </head>
@@ -23,6 +24,7 @@
 				<div class='container'>
 					<div class='header'>
 						<div class='left'>
+							<div onclick='burgerOpen()' class='burger-butt'><img style='width:23px' src='../Img/burger.png' alt=''></div>
 							<div class='logo'><p>ПИЦЦАЛАНДИЯ</p><p class='min'>Своя пицца</p></div>
 						</div>
 						<div class='center'>
@@ -35,6 +37,20 @@
 					</div>
 				</div>
 			</header>
+
+			<div class='BGmenuBurger' id='bgmb'></div>
+			<div class='menuBurger' id='bm'>
+				<div class='menuBurger__content'>
+					<div class='top'>
+						<p>Меню</p>
+					</div>
+					<div class='bottom'>
+						<div><p>Вики вкусов</p></div>
+						<div><p>О нас</p></div>
+						<div><p>Профиль</p></div>
+					</div>
+				</div>
+			</div>
 
 			<div class='hero'>
 				<div class='container-2'>
@@ -54,8 +70,17 @@
 				</div>
 			</div>
 
-			<div style='margin-bottom: 1000px;'></div>
-
+			<div class='basement'></div>
+				<div class='basement__conteiner'>
+					<div class='left'>
+						<img src='../Img/PizzaBasement.png' alt=''>
+						<div class='left__content'>
+							<div class='button'><p>Заказать пиццу</p></div>
+							<p class='underButton'>На первый заказ скидка 10%</p>
+						</div>
+					</div>
+					<div class='right'><p>@cattmem</p><a>GitHub</a></div>
+				</div>
 		</div>
 	</div>
 </body>
