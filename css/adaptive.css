@@ -18,6 +18,7 @@
 }
 @media screen and (min-width: 1025px) {
 	.burger-butt {
+		display:none !important;
 		visibility: hidden;
 	}
 }

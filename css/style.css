@@ -69,6 +69,7 @@ header .header > * > * {
 
 	display: flex;
 	align-items: center;
+	transition: .2s cubic-bezier(.32,.43,0,.98);
   justify-content: center;
 
 	float: left;
@@ -190,6 +191,9 @@ header .logo .min {
 	margin-left: 230px;
 	width: fit-content;
 }
+.basement__conteiner .left .left__content > .button {
+	transition: .2s cubic-bezier(.32,.43,0,.98);
+}
 
 .basement__conteiner .left .left__content > .button > * {
 	width: fit-content;
@@ -247,7 +251,7 @@ header .logo .min {
 
 	background: rgba(55, 55, 55, 0.2);
 	backdrop-filter: blur(15px);
-	transition: .2s;
+	transition: .2s cubic-bezier(.32,.43,0,.98);
 }
 
 .menuBurger {
@@ -261,7 +265,7 @@ header .logo .min {
 	height: 100%;
 
 	font-family: 'Roboto', sans-serif;
-	transition: .2s;
+	transition: .2s  cubic-bezier(.32,.43,0,.98);
 }
 .menuBurger .menuBurger__content {
 	margin-top: 10vh;
@@ -295,6 +299,7 @@ header .logo .min {
 
 	font-weight: 400;
 	font-size: 24px;
+	transition: .2s cubic-bezier(.32,.43,0,.98);
 
 
 	display: flex;
@@ -303,4 +308,17 @@ header .logo .min {
 	float: left;
 	margin-top: 28px;
 	
+}
+
+
+@media (hover: hover) and (pointer: fine) {
+	.menuBurger__content .bottom > *:hover {
+		transform: scale(1.05);
+	}
+	header .header > * > *:hover {
+		transform: scale(1.05);
+	}
+	.basement__conteiner .left .left__content > .button:hover {
+		transform: skew(5deg, 2deg);
+	}
 }
