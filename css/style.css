@@ -43,13 +43,10 @@ header .header {
 
 header .header .left {
 	float: left;
-	width: 400px;
 	min-width: max-content;
 
 }
-header .header .right {
-	width: 400px;
-}
+
 header .header .right > * {
 	float: right;
 }
