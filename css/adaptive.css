@@ -11,6 +11,18 @@
 	.sell__conteiner .lightText {
 		position: absolute;
 		margin-left: calc(var(--index) * 1.5 );
+		margin-right: calc(var(--index) * 1.5 );
+	}
+	.sell__conteiner {
+		display: flex;
+		
+	
+		font-family: 'Roboto', sans-serif;
+		font-weight: 600;
+		font-size: 35px;
+	
+		margin-top: 96px;
+		height: max-content;
 	}
 	.sell__conteiner .left {
 		margin-left: calc(var(--index) * 2 );
@@ -20,5 +32,69 @@
 	.burger-butt {
 		display:none !important;
 		visibility: hidden;
+	}
+}
+@media screen and (max-width:721px) {
+	.hero p {
+		text-align: center;
+	
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 30px;
+		
+		padding: 10px 0 35px 0;
+		margin: 0 0 -20px 0;
+		border-radius: 20px 20px 0 0;
+		background: rgb(31, 31, 31);
+		color:#fff;
+	}
+	.hero {
+		margin-top: 100px;
+	}
+	.sell__conteiner {
+		display: flex;
+	
+		font-family: 'Roboto', sans-serif;
+		font-weight: 600;
+		font-size: 25px;
+	
+		margin-top: 15px;
+		height: max-content;
+	}
+	.sell__conteiner .left {
+		margin-left: calc(var(--index) * 2 );
+		visibility: hidden;
+	}
+	.basement {
+		margin-top: 15px;
+	}
+	.basement__conteiner {
+		display: block;
+	}
+
+	.basement__conteiner .left img {
+		display: none;
+	}
+
+	.basement__conteiner .left .left__content {
+		margin-top: 55px;
+		margin-left: calc(var(--index) * 1.5 );
+		width: fit-content;
+	}
+
+	header .logo {
+		position: absolute;
+		font-weight: 700;
+		font-size: 26px;
+		right: 0;
+	}
+
+	.menuBurger .menuBurger__content {
+		margin-top: 10vh;
+		height: 80vh;
+		width: calc(100vw - calc(var(--index) * 2 ));
+		max-width: calc(100vw - calc(var(--index) * 2 ));
+		background: rgba(255, 255, 255, 0.9);
+		border-radius: 0 20px 30px 0;
 	}
 }

@@ -35,6 +35,7 @@ header .header {
 
 	display: flex;
 	justify-content: space-between;
+	position: relative;
 	
 	margin-top: calc(var(--index) * 1.3);
 
@@ -150,11 +151,7 @@ header .logo .min {
 	left: -45%;
 }
 
-
-
-.basement__conteiner {
-	display: flex;
-
+.basement {
 	width: 100%;
 	height: 287px;
 
@@ -162,8 +159,14 @@ header .logo .min {
 
 	background: #EBEBEB;
 	border-radius: 30px 30px 0 0;
+}
+
+.basement__conteiner {
+	display: flex;
+	border-radius: 30px 30px 0 0;
 
 	font-family: 'Roboto', sans-serif;
+	background: #EBEBEB;
 }
 .basement__conteiner > * {
 	position: relative;
@@ -274,7 +277,7 @@ header .logo .min {
 }
 .menuBurger__content .top {
 	width: 100%;
-	height: 100px;
+	height: fit-content;
 	padding: 28px 28px;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
@@ -288,7 +291,7 @@ header .logo .min {
 }
 .menuBurger__content .bottom > * {
 	width: 100%;
-	height: calc(var(--index) * 3);
+	height: max-content;
 	border-radius: 10px;
 	background: rgba(224, 224, 224, 0.6);
 	backdrop-filter: blur(10px);
