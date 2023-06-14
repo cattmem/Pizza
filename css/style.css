@@ -10,6 +10,9 @@
 	--index: calc(1vw + 1vh);
 }
 
+body {
+	overflow-x: hidden;
+}
 
 .container {
 	margin: 0 calc(var(--index) * 7 );
@@ -22,6 +25,8 @@ header {
 	width: 100%;
 	position: fixed;
 	top:0;
+
+	z-index: 100;
 }
 
 header .header {
@@ -31,10 +36,22 @@ header .header {
 	display: flex;
 	justify-content: space-between;
 	
-	margin-top: calc(var(--index) * 2);
+	margin-top: calc(var(--index) * 1.3);
 
 	font-family: 'Roboto', sans-serif;
 }
+
+header .header .left {
+	float: left;
+	width: 400px;
+}
+header .header .right {
+	width: 400px;
+}
+header .header .right > * {
+	float: right;
+}
+
 
 header .header > * > * {
 	width: max-content;
@@ -92,6 +109,46 @@ header .logo .min {
 	height: calc(var(--index) * 26.8);
 
 	background: url(../Img/PizzaPattern.png) repeat, rgba(235, 121, 58, 1);
-	background-size: 50%;
-	border-radius: 10px;
+	background-size: calc(var(--index) * 20);
+	border-radius: 20px;
+}
+
+
+
+.sell__conteiner {
+	display: flex;
+
+	font-family: 'Roboto', sans-serif;
+	font-weight: 600;
+	font-size: 40px;
+
+	margin-top: 96px;
+}
+.sell__conteiner > * {
+	position: relative;
+	flex: 1;
+  display: flex;
+  align-items:baseline;
+  flex-direction: column;
+}
+.sell__conteiner .right {
+	display: flex;
+	margin: 0 calc(var(--index) * 7 ) 0 0;
+	justify-content: center;
+}
+.sell__conteiner .right p {
+	justify-content: center;
+}
+
+.sell__conteiner .left > img {
+	position: absolute;
+	width: calc(var(--index) * 25);
+	height: calc(var(--index) * 25);
+
+	transform: rotate(0deg);
+
+	left: -45%;
+}
+
+p.unactive {
 }
