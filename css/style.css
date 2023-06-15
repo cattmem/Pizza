@@ -72,7 +72,11 @@ header .header > * > * {
 
 	float: left;
 	margin: 0;
+
+	cursor: pointer;
 }
+
+
 header .header > * > *:not(:last-child) {
 	margin: 0 14px 0 0;
 }
@@ -193,6 +197,7 @@ header .logo .min {
 }
 .basement__conteiner .left .left__content > .button {
 	transition: .2s cubic-bezier(.32,.43,0,.98);
+	cursor: pointer;
 }
 
 .basement__conteiner .left .left__content > .button > * {
@@ -307,6 +312,8 @@ header .logo .min {
 
 	float: left;
 	margin-top: 28px;
+
+	cursor: pointer;
 	
 }
 
