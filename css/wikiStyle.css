@@ -1,6 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+::-webkit-scrollbar-track {
+  background: #666666;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
 * {
 	margin: 0;
 	padding: 0;
@@ -35,13 +67,32 @@ body {
 .bottom {
 	padding: 24px;
 }
+
+.header-button {
+	transition: .2s;
+}
+.header-button.b1.button-active {
+	background: #FC4219;
+}
+.header-button.b2.button-active {
+	background: #E82A2A;
+}
+.header-button.b3.button-active {
+	background: #D79A3F;
+}
+.header-button.b4.button-active {
+	background: #205B04;
+}
+.header-button.b5.button-active {
+	background: #82921F;
+}
 .hero {
 	width: 80%;
-	height: 100vh;
 	margin-left:20%;
 	padding: 28px;
 }
 .bottom > *{
+	display: block;
 	width: 100%;
 	background: rgba(50, 50, 50, 1);
 	color: #FFFFFF !important;
