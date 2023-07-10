@@ -1,2 +1,2 @@
 # Pizza
-https://cat-mem.github.io/Pizza/
+https://cattmem.github.io/Pizza/
